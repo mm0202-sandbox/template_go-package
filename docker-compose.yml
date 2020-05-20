@@ -10,7 +10,7 @@ services:
   test:
     build: .
     image: go-package-template
-    entrypoint: go test -v ./src/packages/
+    entrypoint: go test -v ./github.com/mm0202-sandbox/template_go-package/
     volumes:
       - ./:/go/src
       
@@ -21,4 +21,4 @@ services:
   bundle-test:
     build: .
     image: go-package-template
-    entrypoint: go test -v ./src/packages/
+    entrypoint: go test -v ./github.com/mm0202-sandbox/template_go-package/
