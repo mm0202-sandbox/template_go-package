@@ -1,7 +1,24 @@
 version: "3.2"
 
-services: 
-  go:
-    image: golang
-    volumes: 
+services:
+  local:
+    build: .
+    image: cmd
+    volumes:
       - ./:/go/src
+
+  test:
+    build: .
+    image: cmd
+    entrypoint: go test -v src/packages/
+    volumes:
+      - ./:/go/src
+      
+  bundle:
+    build: .
+    image: cmd
+
+  bundle-test:
+    build: .
+    image: cmd
+    entrypoint: go test -v src/packages/

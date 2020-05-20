@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
+	"./src/packages"
 )
 
 func main() {
-	fmt.Println(HelloWorld())
+	fmt.Println(sample.HelloWorld())
 }
