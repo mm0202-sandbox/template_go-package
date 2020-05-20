@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"src/packages/sample"
+	"mm0202-sandbox/template_go-package/packages/sample"
 )
 
 func main() {
