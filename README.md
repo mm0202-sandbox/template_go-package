@@ -1,7 +1,7 @@
 ## 動作確認
 ```shell script
-account_name=mm0202
-repository_name=sandbox_1st-go-package
+account_name=mm0202-sandbox
+repository_name=template_go-package
 ```
 
 以下のコマンドで`Hello World!!`と表示されれば成功。

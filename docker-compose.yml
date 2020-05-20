@@ -3,22 +3,22 @@ version: "3.2"
 services:
   local:
     build: .
-    image: cmd
+    image: go-package-template
     volumes:
       - ./:/go/src
 
   test:
     build: .
-    image: cmd
-    entrypoint: go test -v src/packages/
+    image: go-package-template
+    entrypoint: go test -v ./github.com/mm0202-sandbox/template_go-package/
     volumes:
       - ./:/go/src
       
   bundle:
     build: .
-    image: cmd
+    image: go-package-template
 
   bundle-test:
     build: .
-    image: cmd
-    entrypoint: go test -v src/packages/
+    image: go-package-template
+    entrypoint: go test -v ./github.com/mm0202-sandbox/template_go-package/
