@@ -20,7 +20,7 @@ jobs:
 
       - run: |
           repo_name=$(echo ${{ github.repository }} | sed -e "s/${{ github.repository_owner }}\///")
-          ~/go/bin/sandbox_1st-go-package
+          ~/go/bin/$repo_name
 
       # - name: notify to slack
       #   uses: mm0202/action_slack-notify@master
