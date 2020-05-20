@@ -1,16 +1,35 @@
-## 動作確認
+# 動作確認
+## ローカル
+### コマンドチェック
 ```shell script
-account_name=mm0202-sandbox
-repository_name=template_go-package
+docker-compose run local 
 ```
 
+### テスト
+```shell script
+docker-compose run test 
+```
+
+### Dockerイメージのビルド
+```shell script
+docker build . 
+```
+
+### ビルドイメージのコマンドチェック
+```shell script
+docker-compose run bundle 
+```
+
+### ビルドイメージのテスト
+```shell script
+docker-compose run bundle-test
+```
+
+## リモート
 以下のコマンドで`Hello World!!`と表示されれば成功。
 ```shell script
-go get github.com/$account_name/$repository_name
-$repository_name
-```
+account_name=[アカウント名]
+repository_name=[リポジトリ名]
 
-dockerを使う場合は、以下のコマンドでチェック。
-```shell script
 docker run golang bash -c "go get github.com/$account_name/$repository_name && go build github.com/$account_name/$repository_name && $repository_name"
 ```

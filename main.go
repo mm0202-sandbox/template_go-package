@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"local.packages/sample"
 )
 
+func HelloWorld() string {
+	return "Hello World!!"
+}
+
 func main() {
-	fmt.Println(sample.HelloWorld())
+	fmt.Println(HelloWorld())
 }

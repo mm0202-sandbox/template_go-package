@@ -1,8 +1,6 @@
 FROM golang
 
-WORKDIR /go/src
-
 COPY main.go main.go
-COPY src src
+COPY main_test.go main_test.go
 
 ENTRYPOINT [ "go", "run", "main.go" ]
