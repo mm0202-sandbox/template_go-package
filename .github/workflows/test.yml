@@ -15,6 +15,8 @@ jobs:
           go-version: 1.13
 
       - run: go test -v ./src/packages/
+
+      - run: cat main.go
         
       - run: go get github.com/${{ github.repository }}
 
