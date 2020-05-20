@@ -26,7 +26,7 @@ docker-compose run bundle-test
 ```
 
 ## リモート
-以下のコマンドで`Hello World!!`と表示されれば成功。
+リモートへプッシュした後、以下のコマンドで`Hello World!!`と表示されれば成功。
 ```shell script
 account_name=[アカウント名]
 repository_name=[リポジトリ名]
