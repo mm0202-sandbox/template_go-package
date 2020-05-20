@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"src/packages"
+	"src/packages/sample"
 )
 
 func main() {
