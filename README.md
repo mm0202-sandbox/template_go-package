@@ -12,5 +12,5 @@ $repository_name
 
 dockerを使う場合は、以下のコマンドでチェック。
 ```shell script
-docker run golang bash -c "go get github.com/$account_name/$repository_name && $repository_name"
+docker run golang bash -c "go get github.com/$account_name/$repository_name && go build github.com/$account_name/$repository_name && $repository_name"
 ```
